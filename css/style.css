@@ -142,6 +142,74 @@ p {
 
 .scrollme {
 	top: 150px;
-	height: 2042px;
+	height: 2000px;
 	overflow: scroll;
+	margin-bottom: 20px;
+}
+
+.col-9-w {
+	display: flex;
+	width: 30%;
+	padding-left: 20px;
+	background-color: #777;
+}
+
+.magazine-stories {
+	margin: 25px 0 0 20px;
+}
+
+
+
+.img-magazine {
+	height: 260px;
+	margin-top: 20px;
+
+	background-color: antiquewhite;
+}
+
+.img-magazine-top {
+	height: 300px;
+	background-color: #323;
+}
+
+.img-slideshow {
+	width: 396px;
+	height: 264px;
+	background-color: antiquewhite;
+
+}
+
+.category , .category-tag{
+	margin: 20px 0;
+}
+
+.category span:first-child {
+	padding: 5px;
+	background-color: red;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	color: white;
+}
+
+.category span:last-child{
+	color: red;
+}
+
+.img-magazine-pick {
+	height: 180px;
+	background-color: antiquewhite;
+}
+
+.category-tag span {
+	padding: 5px;
+	color: red;
+	background: #ddd;
+	font-weight: 500;
+	font-size: 18px;
+	display: inline;
+	margin-bottom: 5px;
+}
+
+.img-slideshow {
+	margin-top: 30px;
 }
