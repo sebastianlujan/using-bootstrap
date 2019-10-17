@@ -1,6 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Roboto+Condensed:400,700&display=swap');
+
 nav {
 	height: 100px;
 	background-color: tomato;
+}
+
+h1, h2, a {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: black;
+}
+
+h2 { font-size: 18px; }
+
+h1 {
+	font-size: 24px;
+	line-height: 24px;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: #333;
+	padding-bottom: 0;
+}
+
+.info h1, .latest { 
+	font-size: 18px; 
+}
+
+.latest {
+	margin-bottom: 0;
+}
+
+.info p {
+	font-size: 14px;
+	color: #555;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+}
+
+.styled-text {
+	font-family: 20px/22px "Lora",serif;
+	color: #272727;
+	font: 22px;
+	padding: 10px 15px 20px 10px;
 }
 
 .menu-bar {
@@ -12,14 +63,23 @@ nav {
 	height: 100%;
 }
 
-.col-4-w {
+.col-3-w, .col-4-w, .col-5-w  {
 	height: 100%;
-	background: tomato;
 }
 
 .col-6-w {
 	padding-left: 0;
 	padding-bottom: 20px;
+}
+
+.col-9-w {
+	display: flex;
+	width: 30%;
+	padding-left: 20px;
+}
+
+.col-5-w {
+	padding-left: 0;
 }
 
 .row-stories {
@@ -28,8 +88,7 @@ nav {
 
 .img {
 	width: 100%;
-	height: 250px;
-	background-color: antiquewhite;
+	margin-bottom: 10px;
 }
 
 .img-travel {
@@ -41,14 +100,11 @@ nav {
 .hero-img {
 	width: 60px;
 	height: 60px;
-	border-radius: 50px;
-	background-color: antiquewhite;
 }
 
 .img-news {
-	width: 48%;
-	height: 100px;
-	background-color: antiquewhite
+	width: 135px;
+	height: 90px;
 }
 
 .img-more-news {
@@ -60,10 +116,14 @@ nav {
 }
 
 .featured-stories {
-	padding: 20px;
-	background-color: #777;
-	margin: 20px 0;
+	padding: 15px 0 0px 15px;
+	margin: 20px 0 0 0;
 	width: 100%;
+}
+
+.top-story {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .featured-stories h1 {
@@ -72,12 +132,14 @@ nav {
 
 .travel-stories {
 	margin-left: 0;
-	background-color: #777;
 }
+
+.opinion{
+	margin-bottom: 30px;
+}
+
 .opinion-stories {
-	padding: 20px;
-	background-color: #777;
-	margin: 20px 0;
+	padding: 10px 0;
 }
 
 .opinion-content {
@@ -86,10 +148,38 @@ nav {
 
 .news-stories {
 	display: flex;
-	padding: 10px;
-	background-color: #777;
-	margin: 20px 0;
+	padding: 5px 10px;
+	margin: 0;
+	margin: 8px 0;
 	width: 100%;
+}
+
+.news-stories-first {
+	margin-top: 30px;
+	padding-top: 0px;
+}
+
+.text-news {
+	position: relative;
+	top: 30px;
+	color: red;
+	font-size: 18px;
+}
+
+hr {
+	width: calc( 100%  - 15px) !important;
+	margin-bottom: 0px;
+	margin: 5px 0;
+}
+
+.hr-w-100 {
+	position: relative;
+	top: 5px;
+}
+
+.hr-sm {
+	width: calc(90% - 20px) !important;
+	margin-left: 10px;
 }
 
 .news-stories h1 {
@@ -100,7 +190,6 @@ nav {
 .more-stories {
 	width: 100%;
 	height: 130px;
-	background-color: #777;
 	margin-bottom: 20px;
 }
 
@@ -116,25 +205,6 @@ nav {
 	margin-left: 20px;
 }
 
-h2 {
-	font-size: 18px;
-}
-
-h1 {
-	color: black !important;
-	font-size: 16px;
-}
-
-a {
-	text-decoration: none !important;
-	color: black !important;
-}
-
-p {
-	font-size: 15px !important;
-	line-height: 20px !important;
-}
-
 .fixed {
 	position: static;
 	overflow: hidden;
@@ -142,45 +212,40 @@ p {
 
 .scrollme {
 	top: 150px;
-	height: 2000px;
+/*	height: 1942px; */
+	height: 100%;
 	overflow: scroll;
 	margin-bottom: 20px;
-}
-
-.col-9-w {
-	display: flex;
-	width: 30%;
-	padding-left: 20px;
-	background-color: #777;
 }
 
 .magazine-stories {
 	margin: 25px 0 0 20px;
 }
 
-
-
 .img-magazine {
-	height: 260px;
+	width: 290px;
+	height: 290px;
 	margin-top: 20px;
-
 	background-color: antiquewhite;
 }
 
 .img-magazine-top {
 	height: 300px;
 	background-color: #323;
+	width: 95%;
 }
 
 .img-slideshow {
-	width: 396px;
+	width: 380px;
 	height: 264px;
 	background-color: antiquewhite;
-
 }
 
 .category , .category-tag{
 	margin: 20px 0;
+	position: absolute;
+	top: 54.3%;
+
 }
 
 .category span:first-child {
@@ -202,14 +267,75 @@ p {
 
 .category-tag span {
 	padding: 5px;
-	color: red;
 	background: #ddd;
 	font-weight: 500;
 	font-size: 18px;
 	display: inline;
 	margin-bottom: 5px;
+	right: 0;
+	top: 85%;
 }
 
-.img-slideshow {
-	margin-top: 30px;
+.red {
+	color: red;
 }
+
+.blue {
+	color: #3581f4;
+}
+
+.category-tag-grey {
+	padding: 0 5px;
+	display: inline-block;
+	background-color: #c2d4d7;
+}
+
+.img-slideshow { margin-top: 30px; }
+
+.subscribe-block {
+	padding: 30px;
+	background-color: #f4f5f6;
+}
+
+.sponsored {
+
+}
+
+.newsletter {
+	max-width: 300px;
+	height: 160px;
+}
+
+.text-title {
+	color: rgba(3,3,3, 0.4);
+	font-size: 16px;
+}
+
+.feature-1 {
+
+}
+
+.col3 {
+	flex-basis: 29%;
+	max-width: 29%;
+	margin: 20px 0 0 -30px;
+	padding: 15px 0 40px 0;
+	padding-left: 15px;
+}
+
+.col5 { flex-basis: 41%; }
+
+.col7 {
+	padding-left: 35px;
+	margin-left: -15px;
+	flex-basis: 59%;
+}
+
+.col9 { flex-basis: 71%; }
+
+.grey-travel-stories {
+	background-color: #f4f5f7;
+}
+
+
+/* testing clases */
