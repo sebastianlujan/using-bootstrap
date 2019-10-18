@@ -24,6 +24,11 @@ a {
 	text-decoration: none;
 }
 
+a:hover{
+	color: inherit;
+	text-decoration: underline #f72210;
+}
+
 p {
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 15px;
@@ -42,8 +47,8 @@ p {
 	padding-left: 10px;
 }
 
-.info h1, .latest { 
-	font-size: 18px; 
+.info h1, .latest {
+	font-size: 18px;
 }
 
 .latest {
@@ -58,7 +63,12 @@ p {
 
 .grey-box {
 	background-color: #f4f5f7;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+}
+
+.grey-box div h2{
+	margin-left: 10px;
 }
 
 .info p {
@@ -107,9 +117,10 @@ p {
 	height: 100%;
 }
 
-.img { 
-	width: 100%; 
-	min-height: 33px;	
+.img {
+	width: 100%;
+	min-height: 33px;
+	margin-bottom: 10px;
 }
 
 .img-travel {
@@ -175,7 +186,7 @@ p {
 .text-news {
 	position: relative;
 	top: 30px;
-	color: red;
+	color: #f72210;
 	font-size: 18px;
 }
 
@@ -193,7 +204,6 @@ hr {
 .news-stories {
 	display: flex;
 	padding: 10px 0px;
-	margin: 8px 0;
 	width: 100%;
 	border-top: 1px solid #ddd;
 }
@@ -247,7 +257,8 @@ hr {
 }
 
 .magazine-stories {
-	margin: 25px 0 0 20px;
+	position: relative;
+	margin-top: 25px;
 }
 
 .img-magazine {
@@ -271,8 +282,9 @@ hr {
 
 .category , .category-tag{
 	margin: 20px 0;
-	position: absolute;
-	top: 54.3%;
+	top: 10px;
+	bottom: 0;
+
 
 }
 
@@ -332,16 +344,47 @@ hr {
 
 .newsletter {
 	max-width: 300px;
-	height: 160px;
+	height: auto;
+	padding: 20px;
+	margin: 30px auto 30px;
+	background-color: #f4f5f6;
+	border: 1px solid #e5e5e5;
+	color: #333;
+	font-family: 'Roboto Condensed', sans-serif;
+	flex-wrap: wrap;
+
+}
+
+.newsletter h3{
+	font-size: 15px;
+	font-weight: 700;
+	padding-top: 15px;
+}
+.newsletter a {
+	background-color: #666;
+	color: white;
+	padding: 10px 10px 10px 12px;
+}
+
+
+.newsweek-logo {
+	width: 30px;
+	height: 30px;
+	background-color: #f72210;
+	background: url(https://g.newsweek.com/www/images/logo-n1.svg) no-repeat #f72210;
+}
+
+.sign-up {
+	font-size: 19px;
+}
+
+.sign-up h1 {
+	padding: 15px 0 10px 0;
 }
 
 .text-title {
 	color: rgba(3,3,3, 0.4);
 	font-size: 16px;
-}
-
-.feature-1 {
-
 }
 
 .col3 {
