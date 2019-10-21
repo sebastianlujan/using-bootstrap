@@ -117,36 +117,6 @@ p {
 	height: 100%;
 }
 
-.img {
-	width: 100%;
-	min-height: 33px;
-	margin-bottom: 10px;
-}
-
-.img-travel {
-	width: 100%;
-	height: 160px;
-	background-color: antiquewhite
-}
-
-.hero-img {
-	width: 60px;
-	height: 60px;
-}
-
-.img-news {
-	width: 135px;
-	height: 90px;
-}
-
-.img-more-news {
-	width: 135px;
-	height: 90px;
-	float: left;
-	margin: 0 15px 10px 0;
-	background-color: antiquewhite;
-}
-
 .featured-stories {
 	padding: 15px 0 15px 0px;
 	margin: 20px 0 0 0;
@@ -261,17 +231,45 @@ hr {
 	margin-top: 25px;
 }
 
-.img-magazine {
-	width: 290px;
-	height: 290px;
-	margin-top: 20px;
+.img {
+	width: 100%;
+	min-height: 33px;
+	margin-bottom: 10px;
+}
+
+.img-travel {
+	width: 100%;
+	height: 160px;
+	background-color: antiquewhite
+}
+
+.hero-img {
+	width: 60px;
+	height: 60px;
+}
+
+.img-news {
+	width: 135px;
+	height: 90px;
+}
+
+.img-more-news {
+	width: 135px;
+	height: 90px;
+	float: left;
+	margin: 0 15px 10px 0;
 	background-color: antiquewhite;
 }
 
+.img-magazine {
+	width: 100%;
+	padding-top: 20px;
+}
+
 .img-magazine-top {
-	height: 300px;
+	height: 100%;
 	background-color: #323;
-	width: 95%;
+	width: 100%;
 }
 
 .img-slideshow {
@@ -279,6 +277,13 @@ hr {
 	height: 264px;
 	background-color: antiquewhite;
 }
+
+.img-magazine-pick {
+	height: 180px;
+	background-color: antiquewhite;
+}
+
+.img-slideshow { margin-top: 30px; }
 
 .category , .category-tag{
 	margin: 20px 0;
@@ -300,10 +305,6 @@ hr {
 	color: red;
 }
 
-.img-magazine-pick {
-	height: 180px;
-	background-color: antiquewhite;
-}
 
 .category-tag span {
 	padding: 5px;
@@ -330,7 +331,6 @@ hr {
 	background-color: #c2d4d7;
 }
 
-.img-slideshow { margin-top: 30px; }
 
 .subscribe-block {
 	padding: 30px;
