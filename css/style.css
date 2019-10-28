@@ -20,9 +20,9 @@ h1 {
 	line-height: 24px;
 }
 
-a {
-	text-decoration: none;
-}
+a { text-decoration: none; }
+
+article { box-sizing: border-box; }
 
 a:hover{
 	color: inherit;
@@ -92,6 +92,14 @@ p {
 
 .brand-header {
 	height: 100%;
+}
+
+.brand {
+	margin-top: 10px;
+}
+
+.lg-nav-logo {
+	fill: white;
 }
 
 .col-3-w, .col-4-w, .col-5-w  {
@@ -239,7 +247,6 @@ hr {
 .img {
 	width: 100%;
 	min-height: 33px;
-	margin-bottom: 10px;
 }
 
 .img-travel {
@@ -319,24 +326,21 @@ hr {
 	color: white;
 }
 
-.category span:last-child{
-	color: red;
-}
+.category span:last-child{ color: red; }
 
 .category-tag span {
 	padding: 5px 15px 9px;
-	background: #ddd;
+	background:	rgba(255,255,255,.9);
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
 	font-size: 17px/16px;
-	display: inline;
 }
 
-.red {
-	color: red;
-}
+.category-tag{ bottom: 0;}
 
-.blue {
-	color: #3581f4;
-}
+.red { color: red; }
+
+.blue { color: #3581f4; }
 
 .category-tag-grey {
 	padding: 0 5px;
@@ -362,6 +366,12 @@ hr {
 
 }
 
+.pic-overlay{
+	background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png);
+	background-repeat: no-repeat;
+	z-index: 999999;
+}
+
 .newsletter h3{
 	font-size: 15px;
 	font-weight: 700;
@@ -382,9 +392,7 @@ hr {
 	background: url(https://g.newsweek.com/www/images/logo-n1.svg) no-repeat #f72210;
 }
 
-.sign-up {
-	font-size: 19px;
-}
+.sign-up { font-size: 19px; }
 
 .sign-up h1 {
 	display: inline-block;
@@ -415,9 +423,7 @@ hr {
 
 .col9 { flex-basis: 71%; }
 
-.grey-travel-stories {
-	background-color: #f4f5f7;
-}
+.grey-travel-stories { background-color: #f4f5f7; }
 
 .img-mini-magazine {
 	width: 170px;
@@ -444,7 +450,8 @@ hr {
 
 .subscribe-block {
 	padding: 30px;
-	text-align: center;}
+	text-align: center;
+}
 
 .subscribe-block a {
 	margin: 30px 0 60px 0;
@@ -475,7 +482,7 @@ hr {
 }
 
 /* testing clases */
-
+/* desktops */
 @media (min-width: 992px) {
 	[class*="item-"] { display: block; }
 
@@ -488,7 +495,6 @@ hr {
 
 	.newsletter-l { padding-right: 0; }
 	.newsletter-r { padding-left: 0; }
-
 
 	.img-slideshow {
 		width: 380px;
@@ -519,6 +525,18 @@ hr {
 	.img-news {
 		width: 135px;
 		height: 90px;
+	}
+}
+
+/*  tablets */
+@media (min-width: 768px) {
+
+	.info-stories {
+		width: 100%;
+	}
+
+	.img-more-stories, .img-news {
+		width: 135px;
 	}
 
 }
