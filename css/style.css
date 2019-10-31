@@ -28,6 +28,22 @@ footer {
 
 .footer-wrapper { padding: 30px; }
 
+.sign-btn,
+.subscribe-btn {
+  font-size: 18px;
+  padding: 20px;
+  align-self: flex-end;
+}
+
+.sign-btn { color: white; }
+
+.subscribe-btn {
+  color: red;
+  background-color: white;
+  padding: 2px 15px 2px 20px;
+  margin: 0 20px;
+}
+
 .text-footer a,
 .text-footer span,
 .social-buttons {
@@ -121,20 +137,36 @@ p {
   padding: 10px 15px 20px 10px;
 }
 
+.menu { padding: 20px 10px; }
+
 .menu a {
-  font-size: 21px/22px;
+  font-size: 21px;
+  padding: 0 20px;
+  margin-right: 20px;
+  padding-right: 20px;
 }
 
-.menu-bar {
-  height: 50px;
-/*  background-color: #323; */
+.mg-glass {
+  background: url(https://g.newsweek.com/www/images/icon-search-glass.svg) center/contain no-repeat white;
+  width: 20px;
+  height: 20px;
 }
+
+input {
+  border: none;
+  width: 100;
+}
+
+.menu-bar { height: 50px; }
 
 .brand-header {
   height: 100%;
 }
 
-.brand { padding: 10px 10px 10px 0; }
+.brand {
+  padding: 10px 10px 10px 0;
+  width: 132px;
+}
 
 .lg-nav-logo {
   fill: white;
@@ -531,7 +563,19 @@ hr {
 @media (min-width: 992px) {
   [class*="item-"] { display: block; }
 
+  .date {
+    display: block;
+    align-self: flex-end;
+    padding-bottom: 20px;
+    color: white;
+  }
+
   nav { display: block; }
+
+  .brand {
+    width: 396px;
+    padding: 20px 0;
+  }
 
   .img-magazine-pick {
     padding-top: 0;
@@ -539,9 +583,18 @@ hr {
   }
 
   .img-magazine {
-
-    /* width: 160px; */
     padding-top: 20px;
+  }
+
+  .img-newsletter {
+    width: 100%;
+    background: url("https://d.newsweek.com/en/full/1525348/newsletter-promo-home-page.png") center center / cover no-repeat;
+    margin-top: 30px;
+  }
+
+  .img-newsletter,
+  .newsletter-l {
+    height: 100%;
   }
 
   .newsletter-l { padding-right: 0; }
