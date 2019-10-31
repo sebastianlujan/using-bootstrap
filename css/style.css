@@ -31,8 +31,11 @@ footer {
 .sign-btn,
 .subscribe-btn {
   font-size: 18px;
-  padding: 20px;
+  padding: 20px 0 0 0;
   align-self: flex-end;
+  margin-left: 20px;
+  margin-right: 0;
+  margin-bottom: 20px;
 }
 
 .sign-btn { color: white; }
@@ -41,7 +44,8 @@ footer {
   color: red;
   background-color: white;
   padding: 2px 15px 2px 20px;
-  margin: 0 20px;
+  margin: 0 20px 0 20px;
+  margin-bottom: 20px;
 }
 
 .text-footer a,
@@ -66,6 +70,13 @@ footer {
 }
 
 .hamburger { display: block; }
+
+.hamburger span {
+  background-color: white;
+  opacity: 0.9;
+  width: 30px;
+  height: 5px;
+}
 
 article { box-sizing: border-box; }
 
