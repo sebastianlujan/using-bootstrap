@@ -1,10 +1,13 @@
 # Using Bootstrap
 ## [Solo Project]
 This project requests students to build a replica of the news site Newsweek.com using the Bootstrap framework.
-
 You can find the original project specification at: https://www.theodinproject.com/courses/html5-and-css3/lessons/using-bootstrap
 
 # Project Screenshot
+![screen1](img/screens/)
+
+
+
 
 
 ### 1020 px breakpoint
@@ -52,7 +55,7 @@ You can find the original project specification at: https://www.theodinproject.c
 ![screen17](img/320p-5.png)
 ![screen18](img/320p-6.png)
 
-[ LIVE DEMO: ](https://sebastianlujan.github.io/newsweek ) 
+[ LIVE DEMO: ](https://sebastianlujan.github.io/newsweek )
 
-#### Authors 
+#### Authors
 * [ @sebastianlujan ](https://github.com/sebastianlujan)

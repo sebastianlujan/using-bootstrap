@@ -2,10 +2,13 @@
 
 (
   function loadPage() {
-    setTimeout( () => {
+
+    let load = () => {
       let list = document.querySelectorAll('img');
       list.forEach( img => img.classList.add('load-in') )
-    } , 500);
+    }
+
+    setTimeout( load , 500);
   }
 )();
 
