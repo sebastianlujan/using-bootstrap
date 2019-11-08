@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lora|Roboto+Condensed:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,500&display=swap');
 
 * {
@@ -20,8 +20,12 @@ img {
 
 .load-in {
   opacity: 1;
+  -webkit-transition-delay: 100ms;
+  -moz-transition-delay: 100ms;
   transition-delay: 100ms;
+  -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
+  -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
 
@@ -86,6 +90,7 @@ footer {
 .subscribe-btn {
   font-size: 12px;
   padding: 20px 0 0 7px;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-left: 10px;
   margin-right: 0;
@@ -128,12 +133,22 @@ footer {
 }
 
 .hamburger-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .hamburger {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: end;
   margin: auto auto auto calc(100% / 3);
   padding-bottom: 10px;
@@ -147,10 +162,14 @@ footer {
   margin: 5px auto 0 auto;
 }
 
-article { box-sizing: border-box; }
+article {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 a:hover {
   color: inherit;
+  -webkit-text-decoration-line: underline #f72210;
   text-decoration-line: underline #f72210;
 }
 
@@ -264,6 +283,14 @@ input {
   font-size: 16px;
 }
 
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
 input:focus::placeholder {
   color: transparent;
 }
@@ -274,15 +301,15 @@ input:focus::placeholder {
   float: right;
   width: 220px;
   height: 100vh;
+  -webkit-box-shadow: 5px 6px 4px 4px black;
   box-shadow: 5px 6px 4px 4px black;
 }
-
-.vertical-menu
 
 .out {
   translate: 100% 0;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -290,6 +317,7 @@ input:focus::placeholder {
   translate: 0% 0;
   opacity: 1;
   visibility: visible;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -314,7 +342,9 @@ input:focus::placeholder {
 
 .bar-1 {
   top: -10px;
+  -webkit-transform-origin: top;
   transform-origin: top;
+  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
   left: -5px;
 }
@@ -328,15 +358,20 @@ input:focus::placeholder {
 .bar-3 {
   top: 5px;
   left: -5px;
+  -webkit-transform-origin: right;
   transform-origin: right;
+  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
   position: absolute;
   background-color: lightseagreen;
 }
 
 .x .bar-1 {
+  -webkit-transform-origin: right;
   transform-origin: right;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   top: 15px;
   left: -5px;
@@ -344,12 +379,16 @@ input:focus::placeholder {
 
 .x .bar-2 {
   display: none;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .x .bar-3 {
+  -webkit-transform-origin: right;
   transform-origin: right;
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   top: -15px;
   left: -5px;
@@ -389,6 +428,8 @@ input:focus::placeholder {
 .featured-stories {
   padding: 15px 0;
   width: 100%;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
   order: 1;
 }
 
@@ -414,6 +455,9 @@ input:focus::placeholder {
 }
 
 .opinion-content {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -441,6 +485,8 @@ hr {
 }
 
 .news-stories {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 10px 0;
   width: 100%;
@@ -630,6 +676,7 @@ hr {
   border: 1px solid #e5e5e5;
   color: #333;
   font-family: 'Roboto Condensed', sans-serif;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -680,6 +727,7 @@ hr {
 }
 
 .col3 {
+  -ms-flex-preferred-size: 29%;
   flex-basis: 29%;
   max-width: 29%;
   margin: 20px 0 0 -30px;
@@ -687,11 +735,15 @@ hr {
   padding-left: 15px;
 }
 
-.col5 { flex-basis: 41%; }
+.col5 {
+  -ms-flex-preferred-size: 41%;
+  flex-basis: 41%;
+}
 
 .col7 {
   padding-left: 35px;
   margin-left: -15px;
+  -ms-flex-preferred-size: 59%;
   flex-basis: 59%;
 }
 
@@ -699,7 +751,10 @@ hr {
   margin-top: 35px;
 }
 
-.col9 { flex-basis: 71%; }
+.col9 {
+  -ms-flex-preferred-size: 71%;
+  flex-basis: 71%;
+}
 
 .grey-travel-stories { background-color: #f4f5f7; }
 
@@ -717,7 +772,12 @@ hr {
 .border-grey { border: 1px solid #ebebeb; }
 
 .subscribe-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 30px;
   text-align: center;
@@ -730,6 +790,8 @@ hr {
   color: white;
   padding: 5px 10px 5px 12px;
   font-size: 18px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -764,6 +826,8 @@ hr {
 
 .hack { margin-top: 30px; }
 
+.holy-grial .container-fluid { padding-top: 20px; }
+
 /* testing clases */
 
 /* desktops */
@@ -776,6 +840,7 @@ hr {
 
   .date {
     display: block;
+    -ms-flex-item-align: end;
     align-self: flex-end;
     padding-bottom: 20px;
     font-size: 18px;
@@ -787,7 +852,6 @@ hr {
 
   .separator {
     position: absolute;
-    top: 40;
     right: 0;
     content: "";
     width: 80px;
@@ -881,7 +945,13 @@ hr {
     max-width: 1309px;
   }
 
-  .holy-grial > .container-fluid { padding-top: 15px; }
+  .holy-grial .container-fluid { padding-top: 20px; }
+  .order-md-1 .featured-stories { padding-top: 0; }
+
+  .sign-btn {
+    padding-top: 15px;
+    margin-bottom: 35px;
+  }
 }
 
 /*  tablets */
@@ -918,11 +988,18 @@ hr {
   .info-subscribe h1,
   .subscribe-block h2 { font-size: 24px; }
 
-  .c-22 { flex-basis: 22%; }
+  .c-22 {
+    -ms-flex-preferred-size: 22%;
+    flex-basis: 22%;
+  }
 
-  .c-78 { flex-basis: 78%; }
+  .c-78 {
+    -ms-flex-preferred-size: 78%;
+    flex-basis: 78%;
+  }
 
   .sponsor-stories { margin-top: 40px; }
+  .order-md-1 .featured-stories { padding-top: 0; }
 }
 
 /* fix for tiny desktops */
