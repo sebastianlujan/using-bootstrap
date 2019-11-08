@@ -32,7 +32,7 @@ nav {
 }
 
 main {
-  padding-top: 13%;
+  padding-top: 11%;
   background: white;
 }
 
@@ -84,25 +84,26 @@ footer {
 
 .sign-btn,
 .subscribe-btn {
-  font-size: 18px;
-  padding: 20px 0 0 0;
+  font-size: 12px;
+  padding: 20px 0 0 7px;
   align-self: flex-end;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .sign-btn {
   color: white;
-  padding: 20px 20px 0 0;
+  padding: 15px 12px 0 0;
+  font-size: 12px;
 }
 .magazine-thumb { margin-top: 30px; }
 
 .subscribe-btn {
   background-color: white;
-  padding: 2px 15px 2px 20px;
-  margin: 0 20px 0 20px;
-  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 1px 7px 1px 5px;
+  margin: auto 20px auto 15px;
 }
 
 .text-footer a,
@@ -171,9 +172,15 @@ p {
   background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
 }
 
+.slide-box span {
+  background: transparent !important;
+  padding: 0;
+  padding-left: 5px;
+}
+
 .col6-left {
-  padding-left: 0;
-  padding-right: 10px;
+  padding-left: 0 !important;
+  padding-right: 10px !important;
 }
 
 .col6-right {
@@ -237,7 +244,10 @@ p {
   font-weight: 400;
 }
 
-.mg-box { position: relative; }
+.mg-box {
+  position: relative;
+  padding: 5px 0;
+}
 
 .mg-glass {
   position: absolute;
@@ -266,6 +276,8 @@ input:focus::placeholder {
   height: 100vh;
   box-shadow: 5px 6px 4px 4px black;
 }
+
+.vertical-menu
 
 .out {
   translate: 100% 0;
@@ -351,8 +363,7 @@ input:focus::placeholder {
 
 .brand {
   padding: 10px 10px 10px 0;
-  margin-top: 10px;
-  width: 132px;
+  width: 110px;
   height: 20px;
 }
 
@@ -684,6 +695,10 @@ hr {
   flex-basis: 59%;
 }
 
+.top-margin {
+  margin-top: 35px;
+}
+
 .col9 { flex-basis: 71%; }
 
 .grey-travel-stories { background-color: #f4f5f7; }
@@ -707,7 +722,6 @@ hr {
   padding: 30px;
   text-align: center;
   margin-top: 30px;
-  max-height: 18.6rem;
 }
 
 .subscribe-button {
@@ -777,7 +791,7 @@ hr {
     right: 0;
     content: "";
     width: 80px;
-    border-left: 13px solid white;
+    border-left: 13px solid transparent;
     border-top: 13px solid #f72210;
   }
 
@@ -866,6 +880,8 @@ hr {
     margin-right: auto;
     max-width: 1309px;
   }
+
+  .holy-grial > .container-fluid { padding-top: 15px; }
 }
 
 /*  tablets */
