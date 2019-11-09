@@ -20,22 +20,27 @@ You can find the original project specification at:
 
 ---
 
-## Mobile - `📱`
+## Mobile  `📱`
 
-![](/img/screens/PHONE_X.gif)
+<p align="center">
+  <img href="/img/screens/PHONE_X.gif" alt="Look that beauty!">
+</p>
 
 ![](/img/screens/mobile.png)
+
 ![](/img/screens/menu3.png)
+**Mobile: min-width: 600px**
 
 ---
 
-## Ipad
+## Tablet
 
 ![](/img/screens/IPAD.gif)
 
 ![](/img/screens/menu1.png)
 ![](/img/screens/menu2.png)
+**Tablet: min-width: 768px**
 
 
-# Author
+## Author
 [ @sebastianlujan ](https://github.com/sebastianlujan)
