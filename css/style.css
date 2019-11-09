@@ -283,17 +283,9 @@ input {
   font-size: 16px;
 }
 
-input:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-
-input:focus:-ms-input-placeholder {
-  color: transparent;
-}
-
-input:focus::placeholder {
-  color: transparent;
-}
+input:focus::-webkit-input-placeholder { color: transparent; }
+input:focus:-ms-input-placeholder { color: transparent; }
+input:focus::placeholder { color: transparent; }
 
 /* javascript-menu */
 .vertical-menu {
@@ -945,7 +937,7 @@ hr {
     max-width: 1309px;
   }
 
-  .holy-grial .container-fluid { padding-top: 20px; }
+  .holy-grial .container-fluid { padding-top: 30px; }
   .order-md-1 .featured-stories { padding-top: 0; }
 
   .sign-btn {
@@ -1000,6 +992,8 @@ hr {
 
   .sponsor-stories { margin-top: 40px; }
   .order-md-1 .featured-stories { padding-top: 0; }
+
+  .img-magazine-top { margin-top: 50px; }
 }
 
 /* fix for tiny desktops */
