@@ -1,0 +1,22 @@
+{
+  "name": "using-bootstrap",
+  "version": "1.0.0",
+  "description": "This project requests students to build a replica of the news site Newsweek.com using the Bootstrap framework. You can find the original project specification at: https://www.theodinproject.com/courses/html5-and-css3/lessons/using-bootstrap",
+  "main": "stylelint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianlujan/using-bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastianlujan/using-bootstrap/issues"
+  },
+  "homepage": "https://github.com/sebastianlujan/using-bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
