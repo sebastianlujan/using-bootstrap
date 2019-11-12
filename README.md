@@ -7,7 +7,7 @@ You can find the original project specification at:
 * https://www.theodinproject.com/courses/html5-and-css3/lessons/using-bootstrap
 
 ---
- 👉 [Newsweek demo](https://sebastianlujan.github.io/using-bootstrap/index.html)
+ 👉 [Newsweek demo](https://cdn.statically.io/gh/sebastianlujan/using-bootstrap/layout/index.html)
 
 ## Desktop  🖥
 
